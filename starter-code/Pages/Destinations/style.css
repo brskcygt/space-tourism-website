@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Bellefair&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background: url("./assets/background-destination-desktop.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.navbar__buttons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: #ffffff;
+  padding: 30px 160px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+}
+
+.navbar__buttons li {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.navbar__buttons li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar__buttons li a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin: 150px 150px 40px 150px;
+  align-items: flex-end;
+}
+
+.info__image {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.info__image span {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+
+.info__inner-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.inner-navbar-buttons {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  color: #ffffff;
+}
+
+.inner-navbar-buttons {
+  padding: 0;
+}
+
+.inner-navbar-buttons li {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.inner-navbar-buttons li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+}
+
+.inner-navbar-buttons li a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.destination-name {
+  color: #fff;
+  font-family: "Bellefair";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.destination-info-text {
+  color: #d0d6f9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  width: 444px;
+  position: relative;
+}
+
+.details {
+  display: flex;
+  gap: 80px;
+}
+
+.details .distance,
+.details .time {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details .distance span:first-child,
+.details .time span:first-child {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+
+.details .distance span:nth-child(2),
+.details .time span:nth-child(2) {
+  color: #fff;
+  font-family: "Bellefair";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
